@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Lato";
+  }
+}
+.heading-Oswald {
+  font-family: "Oswald";
+  font-weight: 700;
+}
+.hero {
+  background: no-repeat url("./assets/Image.jpg");
+  height: 100vh;
+  /* width: 100vw; */
+  background-position: top;
+  background-size: cover;
+}
+
+.section1 {
+  background: no-repeat url("./assets/peak.jpg");
+  height: 100vh;
+  /* width: 100vw; */
+  background-position: top;
+  background-size: cover;
+}
+
+.section2,
+.hidden__section2 {
+  background: no-repeat url("./assets/photo-1417021423914-070979c8eb34.jpg");
+  height: 100vh;
+  /* width: 100vw; */
+  background-position: top;
+  background-size: cover;
+}
+
+.no_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.primary__headline_color {
+  color: rgb(65, 79, 107);
+}
+
+.primary__bg_color {
+  --transparency: 1;
+  background-color: rgba(65, 79, 107, var(--transparency));
+}
+
+.primary__bg_color.transparent {
+  --transparency: 0.6;
+}
+
+.ternary__color {
+  color: rgb(176, 180, 190);
+}
+.ternary__bg__color {
+  --transparency: 1;
+  background-color: rgba(176, 180, 190, var(--transparency));
+}
+.ternary__color.transparent {
+  --transparency: 0;
+}
+
+.active {
+  @apply underline underline-offset-4;
+  background-color: rgba(176, 180, 190, 1) !important;
+  color: rgb(65, 79, 107) !important;
+}
